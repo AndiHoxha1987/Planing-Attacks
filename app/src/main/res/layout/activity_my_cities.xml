@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_my_cities"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MyCities">
+
+    <LinearLayout
+        android:id="@+id/enemy_in_main"
+        style="@style/width_and_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/target_and_lt_my_cities_activity"
+            android:text="@string/target"/>
+
+        <TextView
+            android:id="@+id/city_x_cord_enemy_main"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            style="@style/target_and_lt_my_cities_activity"/>
+
+        <TextView
+            style="@style/target_and_lt_my_cities_activity"
+            android:padding="5dp"
+            android:text="@string/comma" />
+
+        <TextView
+            android:id="@+id/city_y_cord_enemy_main"
+            style="@style/target_and_lt_my_cities_activity"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            style="@style/target_and_lt_my_cities_activity"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/land_time" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/hours_list_enemy_main"
+                style="@style/target_and_lt_my_cities_activity"/>
+
+            <TextView
+                android:id="@+id/text1landtime"
+                style="@style/target_and_lt_my_cities_activity"
+                android:text="@string/points" />
+
+            <TextView
+                android:id="@+id/minutes_list_enemy_main"
+                style="@style/target_and_lt_my_cities_activity"/>
+
+            <TextView
+                android:id="@+id/text1landtime2"
+                style="@style/target_and_lt_my_cities_activity"
+                android:text="@string/points" />
+
+            <TextView
+                android:id="@+id/seconds_list_enemy_main"
+                style="@style/target_and_lt_my_cities_activity"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/add_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/add_a_city"
+            android:background="@color/enemy"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/width_and_height"
+        android:layout_marginTop="10dp"
+        android:background="@color/my_city">
+
+        <TextView
+            android:id="@+id/text_my_cities"
+            style="@style/width_and_height"
+            android:gravity="center"
+            android:text="@string/my_cities"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/army_type"
+        style="@style/width_and_height"
+        android:background="@color/colorBackgroundEnd"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/my_cities_list_names"
+            android:text="@string/city" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/my_cities_list_names"
+            android:text="@string/l" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/my_cities_list_names"
+            android:text="@string/s" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/my_cities_list_names"
+            android:text="@string/z" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/my_cities_list_names"
+            android:text="@string/k" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/my_cities_list_names"
+            android:text="@string/g" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/my_cities_list_names"
+            android:text="@string/r_b" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/my_cities_list_names"
+            android:text="@string/n" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView_my_cities"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        style="@style/width_and_height"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7551305012895219/1360433884">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    style="@style/width_and_height"
+    android:layout_marginTop="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/city"
+        style="@style/my_cities_linear_layout">
+
+        <TextView
+            android:id="@+id/city_name_list"
+            style="@style/my_cities_list_text"
+            android:text="@string/unknown_name" />
+
+        <TextView
+            android:id="@+id/x_cord_list"
+            style="@style/my_cities_list_text"
+            android:text="@string/x_cord" />
+
+        <TextView
+            android:id="@+id/y_cord_list"
+            style="@style/my_cities_list_text"
+            android:text="@string/y_cord" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lancers"
+        style="@style/my_cities_linear_layout">
+
+        <TextView
+            android:id="@+id/lancers_wt"
+            style="@style/my_cities_list_text"/>
+
+        <TextView
+            android:id="@+id/lancers_lt"
+            style="@style/my_cities_list_text_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sentries"
+        style="@style/my_cities_linear_layout">
+
+        <TextView
+            android:id="@+id/sentries_wt"
+            style="@style/my_cities_list_text"/>
+
+        <TextView
+            android:id="@+id/sentries_lt"
+            style="@style/my_cities_list_text_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zerks"
+        style="@style/my_cities_linear_layout">
+
+        <TextView
+            android:id="@+id/zerks_wt"
+            style="@style/my_cities_list_text"/>
+
+        <TextView
+            android:id="@+id/zerks_lt"
+            style="@style/my_cities_list_text_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/knights"
+        style="@style/my_cities_linear_layout">
+
+        <TextView
+            android:id="@+id/knights_wt"
+            style="@style/my_cities_list_text"/>
+
+        <TextView
+            android:id="@+id/knights_lt"
+            style="@style/my_cities_list_text_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/guards"
+        style="@style/my_cities_linear_layout">
+
+        <TextView
+            android:id="@+id/guards_wt"
+            style="@style/my_cities_list_text"/>
+
+        <TextView
+            android:id="@+id/guards_lt"
+            style="@style/my_cities_list_text_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rams"
+        style="@style/my_cities_linear_layout">
+
+        <TextView
+            android:id="@+id/rams_wt"
+            style="@style/my_cities_list_text"/>
+
+        <TextView
+            android:id="@+id/rams_lt"
+            style="@style/my_cities_list_text_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nerds"
+        style="@style/my_cities_linear_layout">
+
+        <TextView
+            android:id="@+id/nerds_wt"
+            style="@style/my_cities_list_text"/>
+
+        <TextView
+            android:id="@+id/nerds_lt"
+            style="@style/my_cities_list_text_bold"/>
+    </LinearLayout>
+
+</LinearLayout>

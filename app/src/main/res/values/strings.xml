@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Attack Planner</string>
+
+    <string name="land_time">LT</string>
+    <string name="unit_speed">Unit Speed</string>
+    <string name="x_cord">X Cord</string>
+    <string name="y_cord">Y Cord</string>
+    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_overview">City Overview</string>
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_city_name">Name</string>
+    <!-- Text hint for Cord X field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_city_cord_X">Cord X</string>
+    <!-- Text hint for Cord Y field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_city_cord_Y">Cord Y</string>
+
+    <string name="action_delete_all">Delete All</string>
+
+    <string name="save">SAVE</string>
+    <string name="enemy_target_cities">ENEMY TARGET CITIES</string>
+    <string name="no_city">No City</string>
+    <string name="add_enemy">Add New Enemy</string>
+    <string name="my_cities">My Cities</string>
+    <string name="enemies">Enemies</string>
+    <string name="target">Target:</string>
+    <string name="city">City</string>
+    <string name="l">L</string>
+    <string name="s">S</string>
+    <string name="z">Z</string>
+    <string name="g">G</string>
+    <string name="r_b">R/B</string>
+    <string name="k">K</string>
+    <string name="n">N</string>
+    <string name="add_a_city">Add New City</string>
+    <string name="points">:</string>
+    <string name="comma">,</string>
+    <string name="unknown_name">Unknown Name</string>
+    <string name="world_speed">World Speed</string>
+    <string name="ws">WS</string>
+    <string name="us">US</string>
+</resources>

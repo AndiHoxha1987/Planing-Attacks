@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_enemies"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/width_and_height"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            style="@style/CategoryStyleEnemy"
+            android:text="@string/category_overview" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/world_speed"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/world_speed"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/unit_speed"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/unit_speed"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/x_cord"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/x_cord"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/y_cord"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/y_cord"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+
+            <LinearLayout
+                style="@style/EditorFieldStyle"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/hours"
+                    style="@style/add_enemy_land_time"
+                    android:importantForAutofill="no"
+                    android:hint="00"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textlandtime"
+                    style="@style/list_enemies_values"
+                    android:text="@string/points" />
+
+                <EditText
+                    android:id="@+id/minutes"
+                    style="@style/add_enemy_land_time"
+                    android:importantForAutofill="no"
+                    tools:ignore="HardcodedText"
+                    android:hint="00"/>
+
+                <TextView
+                    android:id="@+id/textlandtime2"
+                    style="@style/list_enemies_values"
+                    android:text="@string/points" />
+
+                <EditText
+                    android:id="@+id/seconds"
+                    style="@style/add_enemy_land_time"
+                    android:importantForAutofill="no"
+                    android:hint="00"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/save_enemy"
+                style="@style/save_button"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/helper_for_banner"/>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        style="@style/width_and_height"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7551305012895219/1360433884">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

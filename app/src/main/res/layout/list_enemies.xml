@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_enemy"
+    style="@style/width_and_height"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/city_world_speed_enemy"
+        style="@style/list_enemies_text"
+        android:text="@string/ws" />
+
+    <TextView
+        android:id="@+id/city_unit_speed_enemy"
+        style="@style/list_enemies_text"
+        android:text="@string/us" />
+
+    <TextView
+        android:id="@+id/target_enemy"
+        style="@style/list_enemies_text"
+        android:text="@string/target" />
+
+    <TextView
+        android:id="@+id/city_x_cord_enemy"
+        style="@style/list_enemies_text"
+        android:text="@string/x_cord" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/comma" />
+
+    <TextView
+        android:id="@+id/city_y_cord_enemy"
+        style="@style/list_enemies_text"
+        android:text="@string/y_cord" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/list_enemies_values"
+            android:text="@string/land_time" />
+
+        <TextView
+            android:id="@+id/hours_list"
+            style="@style/list_enemies_signs" />
+
+        <TextView
+            android:id="@+id/textlandtime"
+            style="@style/list_enemies_values"
+            android:text="@string/points" />
+
+        <TextView
+            android:id="@+id/minutes_list"
+            style="@style/list_enemies_signs" />
+
+        <TextView
+            android:id="@+id/textlandtime2"
+            style="@style/list_enemies_values"
+            android:text="@string/points" />
+
+        <TextView
+            android:id="@+id/seconds_list"
+            style="@style/list_enemies_signs" />
+    </LinearLayout>
+</LinearLayout>

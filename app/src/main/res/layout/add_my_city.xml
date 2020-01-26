@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_my_cities"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    style="@style/width_and_height"
+    android:padding="@dimen/activity_margin"
+    tools:context=".AddMyCity"
+    android:orientation="horizontal">
+
+    <!-- Label -->
+    <TextView
+        android:text="@string/category_overview"
+        style="@style/CategoryStyle" />
+
+    <!-- Input fields -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <!-- Name field -->
+        <EditText
+            android:id="@+id/edit_city_name"
+            android:hint="@string/hint_city_name"
+            android:inputType="textCapWords"
+            style="@style/EditorFieldStyle"
+            android:importantForAutofill="no" />
+
+        <!-- Cord X field -->
+        <EditText
+            android:id="@+id/edit_x_cord"
+            android:hint="@string/hint_city_cord_X"
+            android:inputType="number"
+            style="@style/EditorFieldStyle"
+            android:importantForAutofill="no" />
+        <!-- Cord Y field -->
+        <EditText
+            android:id="@+id/edit_y_cord"
+            android:hint="@string/hint_city_cord_Y"
+            android:inputType="number"
+            style="@style/EditorFieldStyle"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/add_city_save"
+            style="@style/save_button"/>
+    </LinearLayout>
+</LinearLayout>
+    <TextView
+        style="@style/helper_for_banner"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        style="@style/width_and_height"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7551305012895219/1360433884">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

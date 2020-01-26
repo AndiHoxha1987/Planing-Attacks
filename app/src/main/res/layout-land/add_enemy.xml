@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_enemies"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/helper_for_banner"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:padding="@dimen/activity_margin">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="@string/category_overview"
+                android:textColor="@color/my_city"
+                style="@style/width_and_height"/>
+            <TextView
+                android:id="@+id/save_enemy"
+                style="@style/save_button"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/width_and_height"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/world_speed"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/world_speed"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/unit_speed"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/unit_speed"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/x_cord"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/x_cord"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/y_cord"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/y_cord"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+
+            <LinearLayout
+                style="@style/helper_for_banner"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/hours"
+                    style="@style/add_enemy_land_time"
+                    android:hint="00"
+                    android:importantForAutofill="no"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textlandtime"
+                    style="@style/list_enemies_values"
+                    android:text="@string/points" />
+
+                <EditText
+                    android:id="@+id/minutes"
+                    style="@style/add_enemy_land_time"
+                    android:hint="00"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:importantForAutofill="no"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textlandtime2"
+                    style="@style/list_enemies_values"
+                    android:text="@string/points" />
+
+                <EditText
+                    android:id="@+id/seconds"
+                    style="@style/add_enemy_land_time"
+                    android:hint="00"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:importantForAutofill="no"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        style="@style/width_and_height"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7551305012895219/1360433884">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>
